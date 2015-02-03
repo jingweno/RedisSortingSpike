@@ -33,4 +33,8 @@ public class KeywordKey {
 		return id;
 	}
 
+	@Override
+	public String toString() {
+		return getKey();
+	}
 }

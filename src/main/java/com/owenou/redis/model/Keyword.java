@@ -19,11 +19,18 @@ public class Keyword {
 
 	@Override
 	public String toString() {
-		return key.toString();
+		return "Keyword [name=" + name + ", status=" + status + ", bid=" + bid
+				+ ", impression=" + impression + ", clicks=" + clicks
+				+ ", cpc=" + cpc + ", spend=" + spend + ", sales=" + sales
+				+ ", acos=" + acos + ", key=" + key + "]";
 	}
 
 	public String getName() {
 		return name;
+	}
+
+	public String getId() {
+		return getKey().getId();
 	}
 
 	public void setName(String name) {
@@ -93,7 +100,7 @@ public class Keyword {
 	public void setAcos(float acos) {
 		this.acos = acos;
 	}
-	
+
 	public KeywordKey getKey() {
 		return key;
 	}
